@@ -267,6 +267,46 @@ interface Actor {
 }
 
 """
+The connection type for Actor.
+"""
+type ActorConnection {
+  """
+  A list of edges.
+  """
+  edges: [ActorEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [Actor]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  Identifies the total count of items in the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+An edge in a connection.
+"""
+type ActorEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: Actor
+}
+
+"""
 Location information for an actor
 """
 type ActorLocation {
@@ -925,7 +965,7 @@ input AddPullRequestReviewThreadInput {
   """
   Path to the file being commented on.
   """
-  path: String!
+  path: String
 
   """
   The node ID of the pull request reviewing
@@ -1566,6 +1606,31 @@ An object that can have users assigned to it.
 """
 interface Assignable {
   """
+  A list of actors assigned to this object.
+  """
+  assignedActors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): AssigneeConnection!
+
+  """
   A list of Users assigned to this object.
   """
   assignees(
@@ -1589,6 +1654,36 @@ interface Assignable {
     """
     last: Int
   ): UserConnection!
+
+  """
+  A list of suggested actors to assign to this object
+  """
+  suggestedActors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    If provided, searches users by login or profile name
+    """
+    query: String
+  ): AssigneeConnection!
 }
 
 """
@@ -1631,6 +1726,46 @@ type AssignedEvent implements Node {
 Types that can be assigned to issues.
 """
 union Assignee = Bot | Mannequin | Organization | User
+
+"""
+The connection type for Assignee.
+"""
+type AssigneeConnection {
+  """
+  A list of edges.
+  """
+  edges: [AssigneeEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [Assignee]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  Identifies the total count of items in the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+An edge in a connection.
+"""
+type AssigneeEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: Assignee
+}
 
 """
 An entry in the audit log.
@@ -4488,6 +4623,11 @@ type ClosedEvent implements Node & UniformResourceLocatable {
   createdAt: DateTime!
 
   """
+  The issue or pull request that this issue was marked as a duplicate of.
+  """
+  duplicateOf: IssueOrPullRequest
+
+  """
   The Node ID of the ClosedEvent object
   """
   id: ID!
@@ -6324,7 +6464,8 @@ input ContributionOrder {
 }
 
 """
-A contributions collection aggregates contributions such as opened issues and commits created by a user.
+A collection of contributions made by a user, including opened issues, commits, and pull requests.
+Contributions in private and internal repositories are only included with the optional read:user scope.
 """
 type ContributionsCollection {
   """
@@ -7764,7 +7905,7 @@ input CreateIssueInput {
   """
   The Node ID of the issue type for this issue
   """
-  issueTypeId: ID @possibleTypes(concreteTypes: ["IssueType"])
+  issueTypeId: ID
 
   """
   An array of Node IDs of labels for this issue.
@@ -12914,14 +13055,15 @@ input DraftPullRequestReviewThread {
   body: String!
 
   """
-  The line of the blob to which the thread refers. The end of the line range for multi-line comments.
+  The line of the blob to which the thread refers. The end of the line range for
+  multi-line comments. Required if not using positioning.
   """
-  line: Int!
+  line: Int
 
   """
-  Path to the file being commented on.
+  Path to the file being commented on. Required if not using positioning.
   """
-  path: String!
+  path: String
 
   """
   The side of the diff on which the line resides. For multi-line comments, this is the side for the end of the line range.
@@ -18412,6 +18554,31 @@ type Issue implements Assignable & Closable & Comment & Deletable & Labelable & 
   activeLockReason: LockReason
 
   """
+  A list of actors assigned to this object.
+  """
+  assignedActors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): AssigneeConnection!
+
+  """
   A list of Users assigned to this object.
   """
   assignees(
@@ -18565,6 +18732,11 @@ type Issue implements Assignable & Closable & Comment & Deletable & Labelable & 
   Identifies the primary key from the database.
   """
   databaseId: Int
+
+  """
+  A reference to the original issue that this issue has been marked as a duplicate of.
+  """
+  duplicateOf: Issue
 
   """
   The actor who edited the comment.
@@ -18928,6 +19100,36 @@ type Issue implements Assignable & Closable & Comment & Deletable & Labelable & 
   Summary of the state of an issue's sub-issues
   """
   subIssuesSummary: SubIssuesSummary!
+
+  """
+  A list of suggested actors to assign to this object
+  """
+  suggestedActors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    If provided, searches users by login or profile name
+    """
+    query: String
+  ): AssigneeConnection!
 
   """
   A list of events, comments, commits, etc. associated with the issue.
@@ -20660,6 +20862,11 @@ enum LabelOrderField {
   Order labels by creation time
   """
   CREATED_AT
+
+  """
+  Order labels by issue count
+  """
+  ISSUE_COUNT
 
   """
   Order labels by name
@@ -23292,6 +23499,11 @@ type Milestone implements Closable & Node & UniformResourceLocatable {
   closedAt: DateTime
 
   """
+  Identifies the number of closed issues associated with the milestone.
+  """
+  closedIssueCount: Int!
+
+  """
   Identifies the date and time when the object was created.
   """
   createdAt: DateTime!
@@ -23370,6 +23582,11 @@ type Milestone implements Closable & Node & UniformResourceLocatable {
   Identifies the number of the milestone.
   """
   number: Int!
+
+  """
+  Identifies the number of open issues associated with the milestone.
+  """
+  openIssueCount: Int!
 
   """
   Identifies the percentage complete for the milestone
@@ -25419,6 +25636,16 @@ type Mutation {
     """
     input: ReorderEnvironmentInput!
   ): ReorderEnvironmentPayload
+
+  """
+  Replaces all actors for assignable object.
+  """
+  replaceActorsForAssignable(
+    """
+    Parameters for ReplaceActorsForAssignable
+    """
+    input: ReplaceActorsForAssignableInput!
+  ): ReplaceActorsForAssignablePayload
 
   """
   Reprioritizes a sub-issue to a different position in the parent list.
@@ -39611,6 +39838,31 @@ type PullRequest implements Assignable & Closable & Comment & Labelable & Lockab
   additions: Int!
 
   """
+  A list of actors assigned to this object.
+  """
+  assignedActors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): AssigneeConnection!
+
+  """
   A list of Users assigned to this object.
   """
   assignees(
@@ -40398,6 +40650,36 @@ type PullRequest implements Assignable & Closable & Comment & Labelable & Lockab
   Check and Status rollup information for the PR's head ref.
   """
   statusCheckRollup: StatusCheckRollup
+
+  """
+  A list of suggested actors to assign to this object
+  """
+  suggestedActors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    If provided, searches users by login or profile name
+    """
+    query: String
+  ): AssigneeConnection!
 
   """
   A list of reviewer suggestions based on commit history and past review comments.
@@ -44580,6 +44862,11 @@ type ReleaseAsset implements Node {
   createdAt: DateTime!
 
   """
+  The SHA256 digest of the asset
+  """
+  digest: String
+
+  """
   The number of times this asset was downloaded
   """
   downloadCount: Int!
@@ -45488,6 +45775,45 @@ type ReorderEnvironmentPayload {
   The environment that was reordered
   """
   environment: Environment
+}
+
+"""
+Autogenerated input type of ReplaceActorsForAssignable
+"""
+input ReplaceActorsForAssignableInput {
+  """
+  The ids of the actors to replace the existing assignees.
+  """
+  actorIds: [ID!]!
+    @possibleTypes(
+      concreteTypes: ["Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"]
+      abstractType: "Actor"
+    )
+
+  """
+  The id of the assignable object to replace the assignees for.
+  """
+  assignableId: ID! @possibleTypes(concreteTypes: ["Issue", "PullRequest"], abstractType: "Assignable")
+
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+}
+
+"""
+Autogenerated return type of ReplaceActorsForAssignable.
+"""
+type ReplaceActorsForAssignablePayload {
+  """
+  The item that was assigned.
+  """
+  assignable: Assignable
+
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
 }
 
 """
@@ -50533,6 +50859,46 @@ type Repository implements Node & PackageOwner & ProjectOwner & ProjectV2Recent 
   ): SubmoduleConnection!
 
   """
+  A list of suggested actors that can be attributed to content in this repository.
+  """
+  suggestedActors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    A list of capabilities to filter actors by.
+    """
+    capabilities: [RepositorySuggestedActorFilter!]!
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    A comma separated list of login names to filter actors by. Only the first 10 logins will be used.
+    """
+    loginNames: String
+
+    """
+    Search actors with query on user name and login.
+    """
+    query: String
+  ): ActorConnection!
+
+  """
   Temporary authentication token for cloning this repository.
   """
   tempCloneToken: String
@@ -52560,6 +52926,21 @@ enum RepositoryRulesetTarget {
 }
 
 """
+The possible filters for suggested actors in a repository
+"""
+enum RepositorySuggestedActorFilter {
+  """
+  Actors that can be assigned to issues and pull requests
+  """
+  CAN_BE_ASSIGNED
+
+  """
+  Actors that can be the author of issues and pull requests
+  """
+  CAN_BE_AUTHOR
+}
+
+"""
 A repository-topic connects a repository to a topic.
 """
 type RepositoryTopic implements Node & UniformResourceLocatable {
@@ -53216,6 +53597,11 @@ Autogenerated input type of RequestReviews
 """
 input RequestReviewsInput {
   """
+  The Node IDs of the bot to request.
+  """
+  botIds: [ID!] @possibleTypes(concreteTypes: ["Bot"])
+
+  """
   A unique identifier for the client performing the mutation.
   """
   clientMutationId: String
@@ -53238,7 +53624,7 @@ input RequestReviewsInput {
   """
   The Node IDs of the user to request.
   """
-  userIds: [ID!] @possibleTypes(concreteTypes: ["Bot", "User"])
+  userIds: [ID!] @possibleTypes(concreteTypes: ["User"])
 }
 
 """
@@ -64418,7 +64804,7 @@ input UpdateIssueInput {
   """
   The ID of the Issue Type for this issue.
   """
-  issueTypeId: ID @possibleTypes(concreteTypes: ["IssueType"])
+  issueTypeId: ID
 
   """
   An array of Node IDs of labels for this issue.
@@ -64463,7 +64849,7 @@ input UpdateIssueIssueTypeInput {
   """
   The ID of the issue type to update on the issue
   """
-  issueTypeId: ID @possibleTypes(concreteTypes: ["IssueType"])
+  issueTypeId: ID
 }
 
 """

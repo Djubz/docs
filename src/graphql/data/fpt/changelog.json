@@ -4,6 +4,142 @@
       {
         "title": "The GraphQL schema includes these changes:",
         "changes": [
+          "<p>Type <code>BotOrUser</code> was removed</p>",
+          "<p>Input field <code>botIds</code> of type '[ID!]<code>was added to input object type</code>RequestReviewsInput'</p>"
+        ]
+      }
+    ],
+    "previewChanges": [],
+    "upcomingChanges": [],
+    "date": "2025-06-13"
+  },
+  {
+    "schemaChanges": [
+      {
+        "title": "The GraphQL schema includes these changes:",
+        "changes": [
+          "<p>Enum value 'ISSUE_COUNT<code>was added to enum</code>LabelOrderField'</p>",
+          "<p>Field <code>digest</code> was added to object type <code>ReleaseAsset</code></p>"
+        ]
+      }
+    ],
+    "previewChanges": [],
+    "upcomingChanges": [],
+    "date": "2025-05-27"
+  },
+  {
+    "schemaChanges": [
+      {
+        "title": "The GraphQL schema includes these changes:",
+        "changes": [
+          "<p>Field <code>duplicateOf</code> was added to object type <code>ClosedEvent</code></p>",
+          "<p>Field <code>duplicateOf</code> was added to object type <code>Issue</code></p>"
+        ]
+      }
+    ],
+    "previewChanges": [],
+    "upcomingChanges": [],
+    "date": "2025-05-22"
+  },
+  {
+    "schemaChanges": [
+      {
+        "title": "The GraphQL schema includes these changes:",
+        "changes": [
+          "<p>Type <code>BotOrUser</code> was added</p>"
+        ]
+      }
+    ],
+    "previewChanges": [],
+    "upcomingChanges": [],
+    "date": "2025-05-06"
+  },
+  {
+    "schemaChanges": [
+      {
+        "title": "The GraphQL schema includes these changes:",
+        "changes": [
+          "<p>Input field <code>AddPullRequestReviewThreadInput.path</code> changed type from <code>String!</code> to <code>String</code></p>"
+        ]
+      }
+    ],
+    "previewChanges": [],
+    "upcomingChanges": [],
+    "date": "2025-05-01"
+  },
+  {
+    "schemaChanges": [
+      {
+        "title": "The GraphQL schema includes these changes:",
+        "changes": [
+          "<p>Field <code>closedIssueCount</code> was added to object type <code>Milestone</code></p>",
+          "<p>Field <code>openIssueCount</code> was added to object type <code>Milestone</code></p>"
+        ]
+      }
+    ],
+    "previewChanges": [],
+    "upcomingChanges": [],
+    "date": "2025-04-30"
+  },
+  {
+    "schemaChanges": [
+      {
+        "title": "The GraphQL schema includes these changes:",
+        "changes": [
+          "<p>Input field <code>DraftPullRequestReviewThread.line</code> changed type from <code>Int!</code> to <code>Int</code></p>",
+          "<p>Input field <code>DraftPullRequestReviewThread.path</code> changed type from <code>String!</code> to <code>String</code></p>"
+        ]
+      }
+    ],
+    "previewChanges": [],
+    "upcomingChanges": [],
+    "date": "2025-04-29"
+  },
+  {
+    "schemaChanges": [
+      {
+        "title": "The GraphQL schema includes these changes:",
+        "changes": [
+          "<p>Type <code>RepositorySuggestedActorFilter</code> was added</p>",
+          "<p>Argument 'capabilities: [RepositorySuggestedActorFilter!]!<code>added to field</code>Repository.suggestedActors'</p>"
+        ]
+      }
+    ],
+    "previewChanges": [],
+    "upcomingChanges": [],
+    "date": "2025-04-15"
+  },
+  {
+    "schemaChanges": [
+      {
+        "title": "The GraphQL schema includes these changes:",
+        "changes": [
+          "<p>Type <code>ActorConnection</code> was added</p>",
+          "<p>Type <code>ActorEdge</code> was added</p>",
+          "<p>Type <code>AssigneeConnection</code> was added</p>",
+          "<p>Type <code>AssigneeEdge</code> was added</p>",
+          "<p>Type <code>ReplaceActorsForAssignableInput</code> was added</p>",
+          "<p>Type <code>ReplaceActorsForAssignablePayload</code> was added</p>",
+          "<p>Field <code>assignedActors</code> was added to interface <code>Assignable</code></p>",
+          "<p>Field <code>suggestedActors</code> was added to interface <code>Assignable</code></p>",
+          "<p>Field <code>assignedActors</code> was added to object type <code>Issue</code></p>",
+          "<p>Field <code>suggestedActors</code> was added to object type <code>Issue</code></p>",
+          "<p>Field <code>replaceActorsForAssignable</code> was added to object type <code>Mutation</code></p>",
+          "<p>Field <code>assignedActors</code> was added to object type <code>PullRequest</code></p>",
+          "<p>Field <code>suggestedActors</code> was added to object type <code>PullRequest</code></p>",
+          "<p>Field <code>suggestedActors</code> was added to object type <code>Repository</code></p>"
+        ]
+      }
+    ],
+    "previewChanges": [],
+    "upcomingChanges": [],
+    "date": "2025-04-15"
+  },
+  {
+    "schemaChanges": [
+      {
+        "title": "The GraphQL schema includes these changes:",
+        "changes": [
           "<p>Type <code>AnnouncementBannerI</code> was removed</p>",
           "<p>Input field <code>isPrivate</code> was removed from input object type <code>CreateIssueTypeInput</code></p>",
           "<p><code>Enterprise</code> object type no longer implements <code>AnnouncementBannerI</code> interface</p>",
