@@ -55222,6 +55222,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -56172,6 +56203,37 @@
                 {
                   "type": "integer",
                   "name": "percent_completed",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
                   "description": "",
                   "isRequired": true
                 }
@@ -57150,6 +57212,37 @@
                 {
                   "type": "integer",
                   "name": "percent_completed",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
                   "description": "",
                   "isRequired": true
                 }
@@ -58736,6 +58829,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -59510,6 +59634,37 @@
                 {
                   "type": "integer",
                   "name": "percent_completed",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
                   "description": "",
                   "isRequired": true
                 }
@@ -60966,6 +61121,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -62362,6 +62548,37 @@
                 {
                   "type": "integer",
                   "name": "percent_completed",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
                   "description": "",
                   "isRequired": true
                 }
@@ -64083,6 +64300,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -65585,6 +65833,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -67044,6 +67323,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -68439,6 +68749,37 @@
                 {
                   "type": "integer",
                   "name": "percent_completed",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
                   "description": "",
                   "isRequired": true
                 }
@@ -70092,6 +70433,37 @@
                     {
                       "type": "integer",
                       "name": "percent_completed",
+                      "description": "",
+                      "isRequired": true
+                    }
+                  ]
+                },
+                {
+                  "type": "object",
+                  "name": "issue_dependencies_summary",
+                  "description": "",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "blocked_by",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "blocking",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "total_blocked_by",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "total_blocking",
                       "description": "",
                       "isRequired": true
                     }
@@ -72237,6 +72609,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -73685,6 +74088,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -75081,6 +75515,37 @@
                 {
                   "type": "integer",
                   "name": "percent_completed",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
                   "description": "",
                   "isRequired": true
                 }
@@ -76523,6 +76988,37 @@
                     {
                       "type": "integer",
                       "name": "percent_completed",
+                      "description": "",
+                      "isRequired": true
+                    }
+                  ]
+                },
+                {
+                  "type": "object",
+                  "name": "issue_dependencies_summary",
+                  "description": "",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "blocked_by",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "blocking",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "total_blocked_by",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "total_blocking",
                       "description": "",
                       "isRequired": true
                     }
@@ -78672,6 +79168,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -80249,6 +80776,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -81695,6 +82253,37 @@
                 {
                   "type": "integer",
                   "name": "percent_completed",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
                   "description": "",
                   "isRequired": true
                 }
@@ -83160,6 +83749,37 @@
               ]
             },
             {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -84602,6 +85222,37 @@
                 {
                   "type": "integer",
                   "name": "percent_completed",
+                  "description": "",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "issue_dependencies_summary",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "blocking",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocked_by",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "integer",
+                  "name": "total_blocking",
                   "description": "",
                   "isRequired": true
                 }
@@ -97288,6 +97939,219 @@
                   "description": ""
                 }
               ]
+            },
+            {
+              "type": "string",
+              "name": "state",
+              "description": "",
+              "enum": [
+                "open",
+                "closed"
+              ]
+            },
+            {
+              "type": "object",
+              "name": "latest_status_update",
+              "description": "<p>An status update belonging to a project</p>",
+              "childParamsGroups": [
+                {
+                  "type": "number",
+                  "name": "id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "project_node_id",
+                  "description": ""
+                },
+                {
+                  "type": "object",
+                  "name": "creator",
+                  "description": "<p>A GitHub user.</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "string or null",
+                      "name": "name",
+                      "description": ""
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "email",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "login",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "node_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "avatar_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "gravatar_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "html_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "followers_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "following_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "gists_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "subscriptions_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "organizations_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "repos_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "received_events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "type",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "boolean",
+                      "name": "site_admin",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_at",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "user_view_type",
+                      "description": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "status",
+                  "description": "",
+                  "enum": [
+                    "INACTIVE",
+                    "ON_TRACK",
+                    "AT_RISK",
+                    "OFF_TRACK",
+                    "COMPLETE",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "start_date",
+                  "description": ""
+                },
+                {
+                  "type": "string",
+                  "name": "target_date",
+                  "description": ""
+                },
+                {
+                  "type": "string or null",
+                  "name": "body",
+                  "description": "<p>Body of the status update</p>"
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "name": "is_template",
+              "description": "<p>Whether this project is a template</p>"
             }
           ]
         },
@@ -97816,6 +98680,219 @@
                   "description": ""
                 }
               ]
+            },
+            {
+              "type": "string",
+              "name": "state",
+              "description": "",
+              "enum": [
+                "open",
+                "closed"
+              ]
+            },
+            {
+              "type": "object",
+              "name": "latest_status_update",
+              "description": "<p>An status update belonging to a project</p>",
+              "childParamsGroups": [
+                {
+                  "type": "number",
+                  "name": "id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "project_node_id",
+                  "description": ""
+                },
+                {
+                  "type": "object",
+                  "name": "creator",
+                  "description": "<p>A GitHub user.</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "string or null",
+                      "name": "name",
+                      "description": ""
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "email",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "login",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "node_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "avatar_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "gravatar_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "html_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "followers_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "following_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "gists_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "subscriptions_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "organizations_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "repos_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "received_events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "type",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "boolean",
+                      "name": "site_admin",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_at",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "user_view_type",
+                      "description": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "status",
+                  "description": "",
+                  "enum": [
+                    "INACTIVE",
+                    "ON_TRACK",
+                    "AT_RISK",
+                    "OFF_TRACK",
+                    "COMPLETE",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "start_date",
+                  "description": ""
+                },
+                {
+                  "type": "string",
+                  "name": "target_date",
+                  "description": ""
+                },
+                {
+                  "type": "string or null",
+                  "name": "body",
+                  "description": "<p>Body of the status update</p>"
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "name": "is_template",
+              "description": "<p>Whether this project is a template</p>"
             }
           ]
         },
@@ -98344,6 +99421,219 @@
                   "description": ""
                 }
               ]
+            },
+            {
+              "type": "string",
+              "name": "state",
+              "description": "",
+              "enum": [
+                "open",
+                "closed"
+              ]
+            },
+            {
+              "type": "object",
+              "name": "latest_status_update",
+              "description": "<p>An status update belonging to a project</p>",
+              "childParamsGroups": [
+                {
+                  "type": "number",
+                  "name": "id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "project_node_id",
+                  "description": ""
+                },
+                {
+                  "type": "object",
+                  "name": "creator",
+                  "description": "<p>A GitHub user.</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "string or null",
+                      "name": "name",
+                      "description": ""
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "email",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "login",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "node_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "avatar_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "gravatar_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "html_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "followers_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "following_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "gists_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "subscriptions_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "organizations_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "repos_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "received_events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "type",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "boolean",
+                      "name": "site_admin",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_at",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "user_view_type",
+                      "description": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "status",
+                  "description": "",
+                  "enum": [
+                    "INACTIVE",
+                    "ON_TRACK",
+                    "AT_RISK",
+                    "OFF_TRACK",
+                    "COMPLETE",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "start_date",
+                  "description": ""
+                },
+                {
+                  "type": "string",
+                  "name": "target_date",
+                  "description": ""
+                },
+                {
+                  "type": "string or null",
+                  "name": "body",
+                  "description": "<p>Body of the status update</p>"
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "name": "is_template",
+              "description": "<p>Whether this project is a template</p>"
             }
           ]
         },
@@ -98949,6 +100239,219 @@
                   "description": ""
                 }
               ]
+            },
+            {
+              "type": "string",
+              "name": "state",
+              "description": "",
+              "enum": [
+                "open",
+                "closed"
+              ]
+            },
+            {
+              "type": "object",
+              "name": "latest_status_update",
+              "description": "<p>An status update belonging to a project</p>",
+              "childParamsGroups": [
+                {
+                  "type": "number",
+                  "name": "id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "project_node_id",
+                  "description": ""
+                },
+                {
+                  "type": "object",
+                  "name": "creator",
+                  "description": "<p>A GitHub user.</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "string or null",
+                      "name": "name",
+                      "description": ""
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "email",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "login",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "node_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "avatar_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "gravatar_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "html_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "followers_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "following_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "gists_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "subscriptions_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "organizations_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "repos_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "received_events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "type",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "boolean",
+                      "name": "site_admin",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_at",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "user_view_type",
+                      "description": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "status",
+                  "description": "",
+                  "enum": [
+                    "INACTIVE",
+                    "ON_TRACK",
+                    "AT_RISK",
+                    "OFF_TRACK",
+                    "COMPLETE",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "start_date",
+                  "description": ""
+                },
+                {
+                  "type": "string",
+                  "name": "target_date",
+                  "description": ""
+                },
+                {
+                  "type": "string or null",
+                  "name": "body",
+                  "description": "<p>Body of the status update</p>"
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "name": "is_template",
+              "description": "<p>Whether this project is a template</p>"
             }
           ]
         },
@@ -99477,6 +100980,219 @@
                   "description": ""
                 }
               ]
+            },
+            {
+              "type": "string",
+              "name": "state",
+              "description": "",
+              "enum": [
+                "open",
+                "closed"
+              ]
+            },
+            {
+              "type": "object",
+              "name": "latest_status_update",
+              "description": "<p>An status update belonging to a project</p>",
+              "childParamsGroups": [
+                {
+                  "type": "number",
+                  "name": "id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "project_node_id",
+                  "description": ""
+                },
+                {
+                  "type": "object",
+                  "name": "creator",
+                  "description": "<p>A GitHub user.</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "string or null",
+                      "name": "name",
+                      "description": ""
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "email",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "login",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "node_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "avatar_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string or null",
+                      "name": "gravatar_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "html_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "followers_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "following_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "gists_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "subscriptions_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "organizations_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "repos_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "received_events_url",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "type",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "boolean",
+                      "name": "site_admin",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "starred_at",
+                      "description": ""
+                    },
+                    {
+                      "type": "string",
+                      "name": "user_view_type",
+                      "description": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "created_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "updated_at",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string or null",
+                  "name": "status",
+                  "description": "",
+                  "enum": [
+                    "INACTIVE",
+                    "ON_TRACK",
+                    "AT_RISK",
+                    "OFF_TRACK",
+                    "COMPLETE",
+                    null
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "start_date",
+                  "description": ""
+                },
+                {
+                  "type": "string",
+                  "name": "target_date",
+                  "description": ""
+                },
+                {
+                  "type": "string or null",
+                  "name": "body",
+                  "description": "<p>Body of the status update</p>"
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "name": "is_template",
+              "description": "<p>Whether this project is a template</p>"
             }
           ]
         },
