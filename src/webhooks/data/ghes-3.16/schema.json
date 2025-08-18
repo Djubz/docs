@@ -58860,6 +58860,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -59667,6 +59729,68 @@
                   "name": "total_blocking",
                   "description": "",
                   "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
                 }
               ]
             },
@@ -61152,6 +61276,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -62581,6 +62767,68 @@
                   "name": "total_blocking",
                   "description": "",
                   "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
                 }
               ]
             },
@@ -64331,6 +64579,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -65864,6 +66174,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -67354,6 +67726,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -68782,6 +69216,68 @@
                   "name": "total_blocking",
                   "description": "",
                   "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
                 }
               ]
             },
@@ -70466,6 +70962,68 @@
                       "name": "total_blocking",
                       "description": "",
                       "isRequired": true
+                    }
+                  ]
+                },
+                {
+                  "type": "array of objects",
+                  "name": "issue_field_values",
+                  "description": "",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "issue_field_id",
+                      "description": "<p>Unique identifier for the issue field.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "node_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "data_type",
+                      "description": "<p>The data type of the issue field</p>",
+                      "isRequired": true,
+                      "enum": [
+                        "text",
+                        "single_select",
+                        "number",
+                        "date"
+                      ]
+                    },
+                    {
+                      "type": "null or string or number or integer",
+                      "name": "value",
+                      "description": "<p>The value of the issue field</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "object or null",
+                      "name": "single_select_option",
+                      "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                      "childParamsGroups": [
+                        {
+                          "type": "integer",
+                          "name": "id",
+                          "description": "<p>Unique identifier for the option.</p>",
+                          "isRequired": true
+                        },
+                        {
+                          "type": "string",
+                          "name": "name",
+                          "description": "<p>The name of the option</p>",
+                          "isRequired": true
+                        },
+                        {
+                          "type": "string",
+                          "name": "color",
+                          "description": "<p>The color of the option</p>",
+                          "isRequired": true
+                        }
+                      ]
                     }
                   ]
                 },
@@ -72640,6 +73198,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -74119,6 +74739,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -75548,6 +76230,68 @@
                   "name": "total_blocking",
                   "description": "",
                   "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
                 }
               ]
             },
@@ -77021,6 +77765,68 @@
                       "name": "total_blocking",
                       "description": "",
                       "isRequired": true
+                    }
+                  ]
+                },
+                {
+                  "type": "array of objects",
+                  "name": "issue_field_values",
+                  "description": "",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "issue_field_id",
+                      "description": "<p>Unique identifier for the issue field.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "node_id",
+                      "description": "",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "data_type",
+                      "description": "<p>The data type of the issue field</p>",
+                      "isRequired": true,
+                      "enum": [
+                        "text",
+                        "single_select",
+                        "number",
+                        "date"
+                      ]
+                    },
+                    {
+                      "type": "null or string or number or integer",
+                      "name": "value",
+                      "description": "<p>The value of the issue field</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "object or null",
+                      "name": "single_select_option",
+                      "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                      "childParamsGroups": [
+                        {
+                          "type": "integer",
+                          "name": "id",
+                          "description": "<p>Unique identifier for the option.</p>",
+                          "isRequired": true
+                        },
+                        {
+                          "type": "string",
+                          "name": "name",
+                          "description": "<p>The name of the option</p>",
+                          "isRequired": true
+                        },
+                        {
+                          "type": "string",
+                          "name": "color",
+                          "description": "<p>The color of the option</p>",
+                          "isRequired": true
+                        }
+                      ]
                     }
                   ]
                 },
@@ -79199,6 +80005,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -80807,6 +81675,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -82286,6 +83216,68 @@
                   "name": "total_blocking",
                   "description": "",
                   "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
                 }
               ]
             },
@@ -83780,6 +84772,68 @@
               ]
             },
             {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "string",
               "name": "state",
               "description": "<p>State of the issue; either 'open' or 'closed'</p>",
@@ -85255,6 +86309,68 @@
                   "name": "total_blocking",
                   "description": "",
                   "isRequired": true
+                }
+              ]
+            },
+            {
+              "type": "array of objects",
+              "name": "issue_field_values",
+              "description": "",
+              "childParamsGroups": [
+                {
+                  "type": "integer",
+                  "name": "issue_field_id",
+                  "description": "<p>Unique identifier for the issue field.</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "node_id",
+                  "description": "",
+                  "isRequired": true
+                },
+                {
+                  "type": "string",
+                  "name": "data_type",
+                  "description": "<p>The data type of the issue field</p>",
+                  "isRequired": true,
+                  "enum": [
+                    "text",
+                    "single_select",
+                    "number",
+                    "date"
+                  ]
+                },
+                {
+                  "type": "null or string or number or integer",
+                  "name": "value",
+                  "description": "<p>The value of the issue field</p>",
+                  "isRequired": true
+                },
+                {
+                  "type": "object or null",
+                  "name": "single_select_option",
+                  "description": "<p>Details about the selected option (only present for single_select fields)</p>",
+                  "childParamsGroups": [
+                    {
+                      "type": "integer",
+                      "name": "id",
+                      "description": "<p>Unique identifier for the option.</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "description": "<p>The name of the option</p>",
+                      "isRequired": true
+                    },
+                    {
+                      "type": "string",
+                      "name": "color",
+                      "description": "<p>The color of the option</p>",
+                      "isRequired": true
+                    }
+                  ]
                 }
               ]
             },
@@ -181203,6 +182319,11 @@
               "isRequired": true
             },
             {
+              "type": "string or null",
+              "name": "updated_at",
+              "description": ""
+            },
+            {
               "type": "object or null",
               "name": "user",
               "description": "",
@@ -184418,6 +185539,11 @@
               "name": "submitted_at",
               "description": "",
               "isRequired": true
+            },
+            {
+              "type": "string or null",
+              "name": "updated_at",
+              "description": ""
             },
             {
               "type": "object or null",
@@ -187724,6 +188850,11 @@
               "name": "submitted_at",
               "description": "",
               "isRequired": true
+            },
+            {
+              "type": "string or null",
+              "name": "updated_at",
+              "description": ""
             },
             {
               "type": "object or null",
@@ -191275,6 +192406,12 @@
               "isRequired": true
             }
           ]
+        },
+        {
+          "type": "string or null",
+          "name": "updated_at",
+          "in": "body",
+          "description": ""
         }
       ],
       "availability": [
@@ -194687,6 +195824,12 @@
               "isRequired": true
             }
           ]
+        },
+        {
+          "type": "string or null",
+          "name": "updated_at",
+          "in": "body",
+          "description": ""
         }
       ],
       "availability": [
@@ -197348,6 +198491,12 @@
               "isRequired": true
             },
             {
+              "type": "string or null",
+              "name": "updated_at",
+              "description": "",
+              "isRequired": true
+            },
+            {
               "type": "string",
               "name": "discussion_url",
               "description": ""
@@ -197921,6 +199070,12 @@
             {
               "type": "string or null",
               "name": "created_at",
+              "description": "",
+              "isRequired": true
+            },
+            {
+              "type": "string or null",
+              "name": "updated_at",
               "description": "",
               "isRequired": true
             },
@@ -198563,6 +199718,12 @@
               "isRequired": true
             },
             {
+              "type": "string or null",
+              "name": "updated_at",
+              "description": "",
+              "isRequired": true
+            },
+            {
               "type": "string",
               "name": "discussion_url",
               "description": ""
@@ -199084,6 +200245,12 @@
               "isRequired": true
             },
             {
+              "type": "string or null",
+              "name": "updated_at",
+              "description": "",
+              "isRequired": true
+            },
+            {
               "type": "string",
               "name": "url",
               "description": "",
@@ -199449,6 +200616,12 @@
               "type": "string",
               "name": "target_commitish",
               "description": "<p>Specifies the commitish value that determines where the Git tag is created from.</p>",
+              "isRequired": true
+            },
+            {
+              "type": "string or null",
+              "name": "updated_at",
+              "description": "",
               "isRequired": true
             },
             {
@@ -199886,6 +201059,12 @@
             {
               "type": "string or null",
               "name": "created_at",
+              "description": "",
+              "isRequired": true
+            },
+            {
+              "type": "string or null",
+              "name": "updated_at",
               "description": "",
               "isRequired": true
             },
@@ -200399,6 +201578,12 @@
               "type": "string",
               "name": "target_commitish",
               "description": "<p>Specifies the commitish value that determines where the Git tag is created from.</p>",
+              "isRequired": true
+            },
+            {
+              "type": "string or null",
+              "name": "updated_at",
+              "description": "",
               "isRequired": true
             },
             {
@@ -201630,7 +202815,7 @@
                 {
                   "type": "integer or null",
                   "name": "actor_id",
-                  "description": "<p>The ID of the actor that can bypass a ruleset. If <code>actor_type</code> is <code>OrganizationAdmin</code>, this should be <code>1</code>. If <code>actor_type</code> is <code>DeployKey</code>, this should be null. If <code>actor_type</code> is <code>EnterpriseOwner</code>, <code>actor_id</code> is ignored. <code>OrganizationAdmin</code> and <code>EnterpriseOwner</code> are not applicable for personal repositories.</p>"
+                  "description": "<p>The ID of the actor that can bypass a ruleset. Required for <code>Integration</code>, <code>RepositoryRole</code>, and <code>Team</code> actor types. If <code>actor_type</code> is <code>OrganizationAdmin</code>, this should be <code>1</code>. If <code>actor_type</code> is <code>DeployKey</code>, this should be null. If <code>actor_type</code> is <code>EnterpriseOwner</code>, <code>actor_id</code> is ignored. <code>OrganizationAdmin</code> and <code>EnterpriseOwner</code> are not applicable for personal repositories.</p>"
                 },
                 {
                   "type": "string",
@@ -202601,7 +203786,7 @@
                 {
                   "type": "integer or null",
                   "name": "actor_id",
-                  "description": "<p>The ID of the actor that can bypass a ruleset. If <code>actor_type</code> is <code>OrganizationAdmin</code>, this should be <code>1</code>. If <code>actor_type</code> is <code>DeployKey</code>, this should be null. If <code>actor_type</code> is <code>EnterpriseOwner</code>, <code>actor_id</code> is ignored. <code>OrganizationAdmin</code> and <code>EnterpriseOwner</code> are not applicable for personal repositories.</p>"
+                  "description": "<p>The ID of the actor that can bypass a ruleset. Required for <code>Integration</code>, <code>RepositoryRole</code>, and <code>Team</code> actor types. If <code>actor_type</code> is <code>OrganizationAdmin</code>, this should be <code>1</code>. If <code>actor_type</code> is <code>DeployKey</code>, this should be null. If <code>actor_type</code> is <code>EnterpriseOwner</code>, <code>actor_id</code> is ignored. <code>OrganizationAdmin</code> and <code>EnterpriseOwner</code> are not applicable for personal repositories.</p>"
                 },
                 {
                   "type": "string",
@@ -203572,7 +204757,7 @@
                 {
                   "type": "integer or null",
                   "name": "actor_id",
-                  "description": "<p>The ID of the actor that can bypass a ruleset. If <code>actor_type</code> is <code>OrganizationAdmin</code>, this should be <code>1</code>. If <code>actor_type</code> is <code>DeployKey</code>, this should be null. If <code>actor_type</code> is <code>EnterpriseOwner</code>, <code>actor_id</code> is ignored. <code>OrganizationAdmin</code> and <code>EnterpriseOwner</code> are not applicable for personal repositories.</p>"
+                  "description": "<p>The ID of the actor that can bypass a ruleset. Required for <code>Integration</code>, <code>RepositoryRole</code>, and <code>Team</code> actor types. If <code>actor_type</code> is <code>OrganizationAdmin</code>, this should be <code>1</code>. If <code>actor_type</code> is <code>DeployKey</code>, this should be null. If <code>actor_type</code> is <code>EnterpriseOwner</code>, <code>actor_id</code> is ignored. <code>OrganizationAdmin</code> and <code>EnterpriseOwner</code> are not applicable for personal repositories.</p>"
                 },
                 {
                   "type": "string",
